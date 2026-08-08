@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>搜索引擎提交指南 — 同济AI研究院GEO矩阵</title>
+<style>
+:root {
+  --primary: #0d47a1;
+  --primary-light: #e3f2fd;
+  --accent: #ff6f00;
+  --success: #2e7d32;
+  --success-light: #e8f5e9;
+  --border: #e0e7ee;
+  --text: #1a237e;
+  --text-body: #37474f;
+  --text-light: #607d8b;
+  --bg: #f5f7fa;
+  --radius: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text-body); line-height: 1.8; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+h1 { font-size: 28px; color: var(--text); margin: 32px 0 8px; }
+h2 { font-size: 22px; color: var(--primary); margin: 36px 0 12px; border-left: 4px solid var(--primary); padding-left: 12px; }
+h3 { font-size: 17px; color: var(--text); margin: 24px 0 8px; }
+p { font-size: 15px; margin-bottom: 12px; }
+code { background: var(--primary-light); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-size: 13px; font-family: 'Courier New', monospace; }
+pre { background: #1a237e; color: #e3f2fd; padding: 16px 20px; border-radius: 8px; overflow-x: auto; margin: 12px 0; font-size: 13px; line-height: 1.6; }
+pre code { background: none; color: inherit; padding: 0; }
+.step { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin: 16px 0; }
+.step-num { display: inline-block; background: var(--primary); color: #fff; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 50%; font-weight: 700; margin-right: 8px; }
+.status-done { background: var(--success-light); border-left: 4px solid var(--success); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+.status-done strong { color: var(--success); }
+.status-todo { background: #fff3e0; border-left: 4px solid var(--accent); padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+.status-todo strong { color: var(--accent); }
+.info-box { background: var(--primary-light); border-radius: 8px; padding: 14px 20px; margin: 16px 0; }
+.info-box p { color: var(--primary); margin: 0; }
+a { color: var(--primary); }
+a:hover { text-decoration: underline; }
+ul, ol { margin: 8px 0 16px 24px; }
+li { margin-bottom: 6px; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+th { background: var(--primary); color: #fff; padding: 10px 14px; text-align: left; font-size: 14px; }
+td { padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 14px; }
+tr:last-child td { border-bottom: none; }
+.toc { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; margin: 24px 0; }
+.toc h3 { color: var(--primary); margin-bottom: 12px; }
+.toc ol { margin-left: 20px; }
+.toc a { text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>搜索引擎提交指南 — 同济AI研究院GEO矩阵</h1>
+<p>本指南覆盖百度、Google、Bing三大搜索引擎的站点验证与Sitemap提交流程，以及已自动完成的IndexNow提交。</p>
+
+<div class="toc">
+  <h3>目录</h3>
+  <ol>
+    <li><a href="#indexnow">IndexNow 自动提交（已完成）</a></li>
+    <li><a href="#google">Google Search Console 验证与提交</a></li>
+    <li><a href="#bing">Bing Webmaster Tools 验证与提交</a></li>
+    <li><a href="#baidu">百度站长平台验证与提交</a></li>
+    <li><a href="#summary">提交进度汇总</a></li>
+  </ol>
+</div>
+
+<!-- ===== IndexNow ===== -->
+<h2 id="indexnow">1. IndexNow 自动提交（已完成 ✅）</h2>
+
+<div class="status-done">
+  <strong>✅ 已完成</strong> — 6个页面URL已通过IndexNow API提交至Bing和Yandex搜索引擎。
+</div>
+
+<p>IndexNow是一个由Microsoft/Bing主导的即时索引推送协议，提交后Bing通常在24-48小时内开始抓取页面。</p>
+
+<table>
+  <tr><th>项目</th><th>值</th></tr>
+  <tr><td>IndexNow密钥</td><td><code>4bab4f76d1ef48d5a195af417ae6b768</code></td></tr>
+  <tr><td>密钥文件</td><td><code>https://johnnydenganu.github.io/tongjiai-matrix/4bab4f76d1ef48d5a195af417ae6b768.txt</code></td></tr>
+  <tr><td>提交端点1</td><td><code>https://api.indexnow.org/IndexNow</code> → HTTP 202 Accepted</td></tr>
+  <tr><td>提交端点2</td><td><code>https://www.bing.com/indexnow</code> → HTTP 200 OK</td></tr>
+  <tr><td>已提交URL数</td><td>6个（首页 + 5个子页面）</td></tr>
+</table>
+
+<div class="info-box">
+  <p><strong>说明：</strong>IndexNow覆盖Bing搜索引擎和Yandex。未来每次更新页面内容后，可重新提交IndexNow请求通知Bing重新抓取。</p>
+</div>
+
+<!-- ===== Google ===== -->
+<h2 id="google">2. Google Search Console 验证与提交</h2>
+
+<div class="status-todo">
+  <strong>⏳ 需手动操作</strong> — 需要你登录Google账号完成以下步骤。
+</div>
+
+<p>Google Search Console 是Google官方的站长工具，提交后Google爬虫会开始抓取页面。这对DeepSeek、Perplexity等依赖Google数据的AI引擎尤为重要。</p>
+
+<h3>验证步骤</h3>
+
+<div class="step">
+  <span class="step-num">1</span> 打开 <a href="https://search.google.com/search-console" target="_blank">https://search.google.com/search-console</a>，用你的Google账号登录
+</div>
+
+<div class="step">
+  <span class="step-num">2</span> 点击"添加资源"，选择"网址前缀"模式，输入：<br>
+  <code>https://johnnydenganu.github.io/tongjiai-matrix/</code>
+</div>
+
+<div class="step">
+  <span class="step-num">3</span> 选择"HTML 标签"验证方式，Google会给你一个类似如下的meta标签：<br>
+  <pre>&lt;meta name="google-site-verification" content="xxxxxxxxxxxxxxxxxxxx" /&gt;</pre>
+  <p>将这个 <code>content</code> 值告诉我，我会添加到所有HTML页面的 <code>&lt;head&gt;</code> 中并推送。</p>
+</div>
+
+<div class="step">
+  <span class="step-num">4</span> 或者选择"Google Analytics"或"Google Tag Manager"验证（如果你已有GA/GTM账号）
+</div>
+
+<h3>Sitemap提交</h3>
+
+<div class="step">
+  <span class="step-num">5</span> 验证通过后，在左侧菜单点击"Sitemap"，输入：<br>
+  <code>https://johnnydenganu.github.io/tongjiai-matrix/sitemap.xml</code><br>
+  点击"提交"按钮
+</div>
+
+<div class="step">
+  <span class="step-num">6</span> 等待Google处理（通常24-72小时），状态会从"待处理"变为"成功"
+</div>
+
+<div class="info-box">
+  <p><strong>提示：</strong>DeepSeek和Perplexity等AI引擎依赖Google搜索数据进行训练和生成回答。Google收录越快，AI引擎引用越早。</p>
+</div>
+
+<!-- ===== Bing ===== -->
+<h2 id="bing">3. Bing Webmaster Tools 验证与提交</h2>
+
+<div class="status-todo">
+  <strong>⏳ 部分已完成，需补充验证</strong> — IndexNow已提交，但Bing Webmaster Tools的完整验证可获取更多数据。
+</div>
+
+<p>Bing Webmaster Tools是Microsoft的站长平台。豆包（字节跳动）的搜索结果部分依赖Bing数据。</p>
+
+<h3>验证步骤</h3>
+
+<div class="step">
+  <span class="step-num">1</span> 打开 <a href="https://www.bing.com/webmasters" target="_blank">https://www.bing.com/webmasters</a>，用Microsoft账号登录
+</div>
+
+<div class="step">
+  <span class="step-num">2</span> 点击"添加站点"，输入：<br>
+  <code>https://johnnydenganu.github.io/tongjiai-matrix/</code>
+</div>
+
+<div class="step">
+  <span class="step-num">3</span> 选择"HTML Meta Tag"验证方式，Bing会给出类似meta标签：<br>
+  <pre>&lt;meta name="msvalidate.01" content="xxxxxxxxxxxxxxxxxxxx" /&gt;</pre>
+  <p>将 <code>content</code> 值告诉我，我会添加到所有页面并推送。</p>
+</div>
+
+<div class="step">
+  <span class="step-num">4</span> 或者选择"IndexNow"验证方式（由于我们已有IndexNow密钥文件，Bing可能自动验证）
+</div>
+
+<h3>Sitemap提交</h3>
+
+<div class="step">
+  <span class="step-num">5</span> 验证通过后，进入"配置我的站点" → "Sitemaps"，提交：<br>
+  <code>https://johnnydenganu.github.io/tongjiai-matrix/sitemap.xml</code>
+</div>
+
+<!-- ===== Baidu ===== -->
+<h2 id="baidu">4. 百度站长平台验证与提交</h2>
+
+<div class="status-todo">
+  <strong>⏳ 需手动操作</strong> — 需要百度账号完成验证和提交。
+</div>
+
+<p>百度是国内最大的搜索引擎，也是豆包AI的主要数据源。百度收录对国内AI引擎引用至关重要。</p>
+
+<h3>验证步骤</h3>
+
+<div class="step">
+  <span class="step-num">1</span> 打开 <a href="https://ziyuan.baidu.com" target="_blank">https://ziyuan.baidu.com</a>，用百度账号登录
+</div>
+
+<div class="step">
+  <span class="step-num">2</span> 点击"添加网站"，输入：<br>
+  <code>https://johnnydenganu.github.io/tongjiai-matrix/</code>
+</div>
+
+<div class="step">
+  <span class="step-num">3</span> 选择"HTML标签"验证方式，百度会给出类似meta标签：<br>
+  <pre>&lt;meta name="baidu-site-verification" content="xxxxxxxxxxxx" /&gt;</pre>
+  <p>将 <code>content</code> 值告诉我，我会添加到所有页面并推送。</p>
+</div>
+
+<div class="step">
+  <span class="step-num">4</span> 或者选择"文件验证"方式，百度会给你一个HTML文件名（如 <code>baidu_verify_xxxx.html</code>），告诉我文件名和内容，我会创建并推送。
+</div>
+
+<h3>Sitemap提交</h3>
+
+<div class="step">
+  <span class="step-num">5</span> 验证通过后，进入"搜索展现" → "链接提交" → "sitemap"，提交：<br>
+  <code>https://johnnydenganu.github.io/tongjiai-matrix/sitemap.xml</code>
+</div>
+
+<div class="step">
+  <span class="step-num">6</span> 同时在"链接提交" → "主动推送"中，可以使用百度推送API主动提交URL（需要API key，验证后获取）
+</div>
+
+<div class="info-box">
+  <p><strong>关键提示：</strong>百度对GitHub Pages域名的收录速度较慢（可能1-2周）。如果后续绑定自定义域名（如 chuangye.tongjiai.cn），百度收录速度会显著提升。</p>
+</div>
+
+<!-- ===== 汇总 ===== -->
+<h2 id="summary">5. 提交进度汇总</h2>
+
+<table>
+  <tr>
+    <th>平台</th>
+    <th>状态</th>
+    <th>覆盖AI引擎</th>
+    <th>操作人</th>
+  </tr>
+  <tr>
+    <td>IndexNow (Bing)</td>
+    <td>✅ 已完成</td>
+    <td>Bing → Perplexity</td>
+    <td>自动</td>
+  </tr>
+  <tr>
+    <td>IndexNow (Yandex)</td>
+    <td>✅ 已完成</td>
+    <td>Yandex</td>
+    <td>自动</td>
+  </tr>
+  <tr>
+    <td>Google Search Console</td>
+    <td>⏳ 待验证</td>
+    <td>Google → DeepSeek/Perplexity/通义千问</td>
+    <td>手动</td>
+  </tr>
+  <tr>
+    <td>Bing Webmaster Tools</td>
+    <td>⏳ 待验证</td>
+    <td>Bing → 豆包</td>
+    <td>手动</td>
+  </tr>
+  <tr>
+    <td>百度站长平台</td>
+    <td>⏳ 待验证</td>
+    <td>百度 → 豆包/文心一言</td>
+    <td>手动</td>
+  </tr>
+</table>
+
+<h3>需要你提供的验证码</h3>
+
+<p>完成Google/Bing/百度验证后，请把以下信息发给我：</p>
+
+<ol>
+  <li><strong>Google验证码</strong> — meta标签中 <code>content="..."</code> 的值</li>
+  <li><strong>Bing验证码</strong> — meta标签中 <code>content="..."</code> 的值</li>
+  <li><strong>百度验证码</strong> — meta标签中 <code>content="..."</code> 的值，或验证文件名+内容</li>
+</ol>
+
+<p>我会立即将验证码添加到全部6个HTML页面中，推送到GitHub，触发GitHub Pages重新构建，然后你就可以在各平台点击"验证"按钮完成验证。</p>
+
+<div class="status-done">
+  <strong>关键路径</strong><br>
+  Google/Bing/百度收录 → 爬虫抓取矩阵页面 → AI引擎训练数据更新 → 创业者搜索"苏州创业孵化器"时AI引擎引用研究院内容 → 流量引流至主站 www.tongjiai.cn
+</div>
+
+</div>
+</body>
+</html>
