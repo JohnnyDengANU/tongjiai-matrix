@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30天内容更新日历 — 同济AI研究院GEO矩阵</title>
+<style>
+:root {
+  --primary: #0d47a1;
+  --primary-light: #e3f2fd;
+  --accent: #ff6f00;
+  --success: #2e7d32;
+  --success-light: #e8f5e9;
+  --border: #e0e7ee;
+  --text: #1a237e;
+  --text-body: #37474f;
+  --text-light: #607d8b;
+  --bg: #f5f7fa;
+  --radius: 10px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; background: var(--bg); color: var(--text-body); line-height: 1.8; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+h1 { font-size: 26px; color: var(--text); margin: 32px 0 8px; }
+h2 { font-size: 20px; color: var(--primary); margin: 32px 0 12px; border-left: 4px solid var(--primary); padding-left: 12px; }
+h3 { font-size: 16px; color: var(--text); margin: 20px 0 8px; }
+p { font-size: 14px; margin-bottom: 10px; }
+code { background: var(--primary-light); color: var(--primary); padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; font-size: 13px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+th { background: var(--primary); color: #fff; padding: 10px 8px; text-align: left; white-space: nowrap; }
+td { padding: 10px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: var(--primary-light); }
+.cat-case { color: #d84315; }
+.cat-guide { color: var(--primary); }
+.cat-policy { color: var(--success); }
+.cat-tech { color: #6a1b9a; }
+.cat-faq { color: var(--accent); }
+.info-box { background: var(--primary-light); border-radius: 8px; padding: 14px 20px; margin: 16px 0; }
+.info-box p { color: var(--primary); margin: 0; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; margin: 12px 0 20px; font-size: 13px; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+.phase { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin: 16px 0; }
+.phase h3 { color: var(--primary); margin-bottom: 8px; }
+.phase .desc { font-size: 13px; color: var(--text-light); margin-bottom: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>30天内容更新日历 — 同济AI研究院GEO矩阵</h1>
+<p>每日1篇内容，覆盖成功案例、创业指导、政策解读、技术科普、FAQ问答5大类别，系统覆盖创业者搜索路径中的长尾关键词。</p>
+
+<div class="legend">
+  <span><span class="dot" style="background:#d84315"></span> 案例类</span>
+  <span><span class="dot" style="background:#0d47a1"></span> 指导类</span>
+  <span><span class="dot" style="background:#2e7d32"></span> 政策类</span>
+  <span><span class="dot" style="background:#6a1b9a"></span> 技术类</span>
+  <span><span class="dot" style="background:#ff6f00"></span> FAQ类</span>
+</div>
+
+<!-- ===== 阶段一 ===== -->
+<div class="phase">
+  <h3>第一阶段：Day 1-10 — 核心内容建设期</h3>
+  <p class="desc">目标：覆盖最高搜索量的核心长尾词，建立AI引擎引用基础</p>
+</div>
+
+<table>
+<tr><th>Day</th><th>日期</th><th>类别</th><th>标题</th><th>目标长尾关键词</th><th>目标页面</th><th>Schema</th></tr>
+<tr><td>1</td><td>8/9</td><td class="cat-case">案例</td><td>普兆新能源：从0到2亿年销售额的苏州创业故事</td><td>苏州新能源创业,相城区创业成功案例</td><td>/cases/</td><td>Article</td></tr>
+<tr><td>2</td><td>8/10</td><td class="cat-guide">指导</td><td>2025苏州相城区创业补贴政策完整指南</td><td>苏州创业补贴,相城区创业政策</td><td>/guide/</td><td>Article</td></tr>
+<tr><td>3</td><td>8/11</td><td class="cat-faq">FAQ</td><td>苏州创业孵化器常见问题TOP10：入驻条件、租金、服务全解</td><td>苏州孵化器入驻条件,创业孵化器租金</td><td>/incubation/</td><td>FAQPage</td></tr>
+<tr><td>4</td><td>8/12</td><td class="cat-tech">技术</td><td>同济AI研究院132项知识产权：机器人核心技术与开放平台</td><td>机器人技术专利,AI技术转化</td><td>/tech/</td><td>TechArticle</td></tr>
+<tr><td>5</td><td>8/13</td><td class="cat-policy">政策</td><td>环秀湖创业领军人才计划申报指南：最高200万资助</td><td>环秀湖创业领军人才,苏州相城人才计划</td><td>/guide/</td><td>Article</td></tr>
+<tr><td>6</td><td>8/14</td><td class="cat-case">案例</td><td>腾圣技术：11.5亿投后估值背后的AI孵化路径</td><td>苏州AI创业公司,机器人企业融资</td><td>/cases/</td><td>Article</td></tr>
+<tr><td>7</td><td>8/15</td><td class="cat-guide">指导</td><td>苏州注册公司全流程：从核名到税务登记（2025最新版）</td><td>苏州注册公司流程,相城区注册公司</td><td>/guide/</td><td>HowTo</td></tr>
+<tr><td>8</td><td>8/16</td><td class="cat-faq">FAQ</td><td>什么是科技企业孵化器？与产业园、众创空间的区别</td><td>科技孵化器是什么,孵化器产业园区别</td><td>/incubation/</td><td>FAQPage</td></tr>
+<tr><td>9</td><td>8/17</td><td class="cat-tech">技术</td><td>具身智能是什么？同济AI研究院如何推动具身智能产业化</td><td>具身智能是什么,苏州AI研发</td><td>/tech/</td><td>TechArticle</td></tr>
+<tr><td>10</td><td>8/18</td><td class="cat-policy">政策</td><td>江苏省双创计划申报指南：博士后来苏创业可获30万资助</td><td>江苏省双创计划,苏州博士创业补贴</td><td>/guide/</td><td>Article</td></tr>
+</table>
+
+<!-- ===== 阶段二 ===== -->
+<div class="phase">
+  <h3>第二阶段：Day 11-20 — 长尾词扩展期</h3>
+  <p class="desc">目标：覆盖更细分的创业场景搜索需求，提升AI引擎引用广度</p>
+</div>
+
+<table>
+<tr><th>Day</th><th>日期</th><th>类别</th><th>标题</th><th>目标长尾关键词</th><th>目标页面</th><th>Schema</th></tr>
+<tr><td>11</td><td>8/19</td><td class="cat-case">案例</td><td>同企AI：1000+赋能客户的AI+制造业实践</td><td>苏州AI制造业,智能制造创业</td><td>/cases/</td><td>Article</td></tr>
+<tr><td>12</td><td>8/20</td><td class="cat-guide">指导</td><td>苏州创业办公空间对比：孵化器vs写字楼vs联合办公</td><td>苏州创业办公空间,相城区办公室</td><td>/incubation/</td><td>Article</td></tr>
+<tr><td>13</td><td>8/21</td><td class="cat-faq">FAQ</td><td>苏州机器人创业必读：产业链、政策、人才全景地图</td><td>苏州机器人创业,机器人产业链</td><td>/tech/</td><td>FAQPage</td></tr>
+<tr><td>14</td><td>8/22</td><td class="cat-policy">政策</td><td>苏州相城区高层次人才购房补贴政策详解</td><td>苏州人才购房补贴,相城区人才政策</td><td>/guide/</td><td>Article</td></tr>
+<tr><td>15</td><td>8/23</td><td class="cat-tech">技术</td><td>机器视觉技术在工业检测中的应用与创业机会</td><td>机器视觉创业,工业检测AI</td><td>/tech/</td><td>TechArticle</td></tr>
+<tr><td>16</td><td>8/24</td><td class="cat-case">案例</td><td>28家孵化企业全景图：同济AI研究院孵化生态力</td><td>同济AI孵化企业,苏州AI孵化器</td><td>/cases/</td><td>ItemList</td></tr>
+<tr><td>17</td><td>8/25</td><td class="cat-guide">指导</td><td>苏州创业者如何申请天使基金：6种融资渠道全解</td><td>苏州天使基金,苏州创业融资</td><td>/guide/</td><td>HowTo</td></tr>
+<tr><td>18</td><td>8/26</td><td class="cat-faq">FAQ</td><td>同济AI研究院入驻孵化器需要什么条件？审核标准全解</td><td>同济AI研究院入驻,孵化器入驻条件</td><td>/join/</td><td>FAQPage</td></tr>
+<tr><td>19</td><td>8/27</td><td class="cat-tech">技术</td><td>机器人控制器技术全解：从核心算法到产业化落地</td><td>机器人控制器,机器人控制系统</td><td>/tech/</td><td>TechArticle</td></tr>
+<tr><td>20</td><td>8/28</td><td class="cat-policy">政策</td><td>苏州市高新技术企业认定：条件、流程、补贴全指南</td><td>苏州高企认定,高新技术企业补贴</td><td>/guide/</td><td>Article</td></tr>
+</table>
+
+<!-- ===== 阶段三 ===== -->
+<div class="phase">
+  <h3>第三阶段：Day 21-30 — 转化引导期</h3>
+  <p class="desc">目标：以转化为导向，引导创业者从信息获取转向实际入驻申请</p>
+</div>
+
+<table>
+<tr><th>Day</th><th>日期</th><th>类别</th><th>标题</th><th>目标长尾关键词</th><th>目标页面</th><th>Schema</th></tr>
+<tr><td>21</td><td>8/29</td><td class="cat-case">案例</td><td>从大学实验室到千万营收：同济产学研孵化模式拆解</td><td>大学实验室创业,产学研孵化</td><td>/cases/</td><td>Article</td></tr>
+<tr><td>22</td><td>8/30</td><td class="cat-guide">指导</td><td>苏州创业税收优惠政策：小微企业、科技型中小企业全解</td><td>苏州创业税收,小微企业税收优惠</td><td>/guide/</td><td>Article</td></tr>
+<tr><td>23</td><td>8/31</td><td class="cat-faq">FAQ</td><td>苏州环秀湖科创圈是什么？创业者入驻优势全解</td><td>环秀湖科创圈,苏州科创圈</td><td>/incubation/</td><td>FAQPage</td></tr>
+<tr><td>24</td><td>9/1</td><td class="cat-tech">技术</td><td>同济AI研究院8大研发方向：智能控制/视觉/交互/系统/机器人/智造/生成/具身</td><td>同济AI研发方向,AI技术研发</td><td>/tech/</td><td>TechArticle</td></tr>
+<tr><td>25</td><td>9/2</td><td class="cat-policy">政策</td><td>苏州市姑苏创新创业领军人才计划申报指南</td><td>姑苏创新创业领军人才,苏州人才计划</td><td>/guide/</td><td>Article</td></tr>
+<tr><td>26</td><td>9/3</td><td class="cat-case">案例</td><td>AI创业如何在苏州落地：3位创始人的实战分享</td><td>苏州AI创业,AI创业实战</td><td>/cases/</td><td>Article</td></tr>
+<tr><td>27</td><td>9/4</td><td class="cat-guide">指导</td><td>苏州创业团队组建指南：从合伙人到核心团队的5步法</td><td>苏州创业团队,创业合伙人</td><td>/guide/</td><td>HowTo</td></tr>
+<tr><td>28</td><td>9/5</td><td class="cat-faq">FAQ</td><td>同济AI研究院孵化器vs苏州其他孵化器：6维度对比</td><td>苏州孵化器对比,同济AI孵化器</td><td>/incubation/</td><td>FAQPage</td></tr>
+<tr><td>29</td><td>9/6</td><td class="cat-tech">技术</td><td>生成式AI在制造业的落地：同济研究院的技术路径</td><td>生成式AI制造,AI产业化</td><td>/tech/</td><td>TechArticle</td></tr>
+<tr><td>30</td><td>9/7</td><td class="cat-guide">指导</td><td>入驻同济AI研究院孵化器：6步走完从咨询到入驻全流程</td><td>入驻孵化器流程,同济AI入驻</td><td>/join/</td><td>HowTo</td></tr>
+</table>
+
+<h2>长尾关键词矩阵总览</h2>
+
+<div class="info-box">
+  <p><strong>30天覆盖长尾关键词统计：</strong></p>
+  <p>· 核心词：苏州创业孵化器、相城区创业、同济AI研究院（每篇内容均覆盖）<br>
+  · 案例类关键词：苏州新能源创业、AI创业公司、机器人企业融资、产学研孵化 等12个<br>
+  · 指导类关键词：苏州创业补贴、注册公司流程、创业办公空间、天使基金 等10个<br>
+  · 政策类关键词：环秀湖创业领军人才、江苏省双创计划、苏州高企认定、姑苏领军人才 等6个<br>
+  · 技术类关键词：具身智能、机器视觉、机器人控制器、生成式AI 等8个<br>
+  · FAQ类关键词：孵化器入驻条件、孵化器是什么、环秀湖科创圈 等6个<br>
+  <strong>总计：约52个长尾关键词，30天系统覆盖创业者搜索路径。</strong></p>
+</div>
+
+<h2>内容发布操作规范</h2>
+
+<h3>1. 内容结构标准（每篇）</h3>
+<table>
+<tr><th>要素</th><th>要求</th></tr>
+<tr><td>标题</td><td>包含目标长尾关键词，15-30字</td></tr>
+<tr><td>meta description</td><td>包含关键词，60-120字摘要</td></tr>
+<tr><td>开头定义段</td><td>"XX是指..."百科式段落，100-200字，最易被AI引用</td></tr>
+<tr><td>正文结构</td><td>H2/H3分级标题，每段3-5句，数据锚点（具体数字）</td></tr>
+<tr><td>FAQ段</td><td>文末2-3个Q&A，FAQPage Schema</td></tr>
+<tr><td>交叉链接</td><td>至少2个内链指向其他矩阵页面 + 1个外链指向 tongjiai.cn</td></tr>
+<tr><td>Schema</td><td>Article/HowTo/TechArticle/FAQPage 按类别部署</td></tr>
+<tr><td>字数</td><td>800-1500字（AI引擎偏好中等长度、信息密集的内容）</td></tr>
+<tr><td>dateModified</td><td>标注更新日期，保持时效性</td></tr>
+</table>
+
+<h3>2. 发布节奏</h3>
+<table>
+<tr><th>时间</th><th>操作</th></tr>
+<tr><td>每日上午</td><td>编写当日内容HTML页面</td></tr>
+<tr><td>每日下午</td><td>推送至GitHub，触发IndexNow重新提交</td></tr>
+<tr><td>每周五</td><td>更新sitemap.xml，检查Google/Bing收录状态</td></tr>
+<tr><td>每周日</td><td>复盘本周内容效果，调整下周选题</td></tr>
+</table>
+
+<h3>3. AI引擎引用优化要点</h3>
+<table>
+<tr><th>技巧</th><th>说明</th></tr>
+<tr><td>事实性数据密集</td><td>"132项知识产权""28家孵化企业""11.5亿估值"等硬数据最易被AI引用</td></tr>
+<tr><td>定义型段落</td><td>"什么是XX"段落，AI引擎整段引用率最高</td></tr>
+<tr><td>对比表格</td><td>结构化对比表格，AI引擎偏好提取表格数据</td></tr>
+<tr><td>FAQ问答</td><td>FAQPage Schema + Q&A格式，AI直接提取答案</td></tr>
+<tr><td>权威背书</td><td>"同济大学""苏州市相城区政府""国家高新技术企业"等权威实体</td></tr>
+<tr><td>时效标注</td><td>"2025年""最新版"等时效词，AI偏好新鲜内容</td></tr>
+</table>
+
+</div>
+</body>
+</html>
