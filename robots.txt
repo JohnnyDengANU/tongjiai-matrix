@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.tongjiai.cn/sitemap.xml
+Sitemap: https://matrix.tongjiai.cn/sitemap.xml
